@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Penetration Testing with Kali Linux</title>
+    <link rel="stylesheet" type="text/css" href="media/css/main.css">
+	<script src="media/js/modernizr.js"></script>
+</head>
+<body>
+    <section id="content">
+    	<div class="col span_1_of_3">
+    		<div id="search-bar">
+    			<input class="typeahead" type="text" placeholder="Keyword search">
+    		</div>
+
+    		<nav>
+    			<ul id="nav"></ul>
+    		</nav>
+        </div>
+
+        <div class="col span_2_of_3">
+    		<aside>
+    			<video id="video" src="media/video/pwk-0.mp4" controls preload="metadata">
+    			    <p>You must use a modern browser that supports the HTML5 video element.</p>
+    			</video>
+    		</aside>
+    	</div>
+    </section>
+
+    <section>
+        <footer>
+                <a href="https://forums.offensive-security.com/" target="_blank" title="Offsec Forums (opens in new tab or window)">Offsec Forums</a>
+                <aside>
+                    <input type="checkbox" id="loop" name="loop" checked> <label for="loop">Continuous Play</label>
+                </aside>
+        </footer>
+    </section>
+
+	<script src="media/js/bundle.js"></script>
+    <script>
+        $(document).ready(function() {
+            PWK.init({
+                modules: courseJSON.modules,
+                nav: $('nav ul#nav'),
+                video: $('#video')
+            });
+        });
+    </script>
+</body>
+</html>
+
